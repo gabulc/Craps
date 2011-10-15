@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Craps Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="title" content="Craps Game">
+    <meta name="author" content="Eduardo Arenas, Gabriel Lucano, Jeffrey Pinedo">
+    <meta name="robots" content="all,follow,index">
+    <meta name="keywords" content="craps, dados, juego de dados, craps Game">
+    <meta name="description" content="Juego de Dados">
+    
+    <link  href="craps_estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    <script type="text/javascript" src="wz_jsgraphics.js"></script>
+    <script type="text/javascript" src="mapper.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="mover.js"></script>
+
+  </head>
+  
+  <body>
+      <div id="container">
+          <div id="header">
+                  <img id="iHead" src="../Imagenes/crapsTitle.png" />
+          </div>
+          <div id="mainCraps">
+              <div id="contentCraps">
+                  <form method="post" action="CrapsView.php">
+                      <img id="table" src="../Imagenes/Crapslayout.png" alt="crapsTable" alt="Craps Table" usemap ="#craps" class="mapper noborder" />
+                    <map id ="craps" name="craps">
+               <area id="4point" shape="rect" coords="139,62,192,119" nohref="#" alt="4" title="4"/>
+                        <area id="5point" shape="rect" coords="194,62,247,117" nohref="?opcion=&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=5" alt="5" title="5"/>
+                        <area id="6point" shape="rect" coords="252,62,303,119" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=6" alt="6" title="6"/>
+                        <area id="8point" shape="rect" coords="306,61,360,119" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=8" alt="8" title="8"/>
+                        <area id="9point" shape="rect" coords="362,61,415,118" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=9" alt="9" title="9"/>
+                        <area id="10point" shape="rect" coords="417,62,473,118" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=10" alt="10" title="10"/>
+
+                        <area id="dontCome" shape="rect" coords="89,19,136,130" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=dontCome" alt="dontcome" title="dontcome"/>
+                        <area id="come" shape="rect" coords="89,135,413,202" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=come" alt="come" title="come"/>
+                        <area id="seven5x1" shape="rect" coords="504,113,695,136" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=seven5x1" alt="seven5x1" title="seven5x1"/>
+                        <area id="anyCraps8x1" shape="rect" coords="490,355,709,390" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=anyCraps8x1" alt="anycraps8x1" title="anycraps8x1"/>
+                        <area id="10x1-3s" shape="rect" coords="491,141,596,189" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=10x1-3s" alt="10x1-3's" title="10x1-3s"/>
+                        <area id="8x1-5s" shape="rect" coords="599,140,706,189" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=8x1-5s" alt="8x1-5's" title="8x1-5s"/>
+                        <area id="10x1-4s" shape="rect" coords="490,192,597,244" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=10x1-4s" alt="10x1-4's" title="10x1-4s"/>
+                        <area id="8x1-2s" shape="rect" coords="599,192,705,245" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=8x1-2s" alt="8for1-2's" title="8x1-2s"/>
+                        <area id="16x1-3" shape="rect" coords="489,247,562,297" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=16x1-3" alt="16x1-3" title="16x1-3"/>
+                        <area id="31x1-2" shape="rect" coords="564,247,635,297" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=31x1-2" alt="31for1-2" title="31x1-2"/>
+                        <area id="31x1-12" shape="rect" coords="637,248,706,296" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=31x1-12" alt="31for1-12" title="31x1-12"/>
+                        <area id="16x1-11-1" shape="rect" coords="489,298,596,353" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=16x1-11-1" alt="16for1-11(1)" title="16x1-11"/>
+                        <area id="field" shape="poly" coords="90,206,411,206,412,258,136,258,118,254,104,245,94,232" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=field" alt="field" title="field"   />
+                        <area id="passLine" shape="poly" coords="16,18,46,18,46,226,49,247,58,269,81,290,117,300,412,300,412,333,94,334,61,326,36,307,21,278,16,245" nohref="?opcion=passLine&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=passLine"  alt="passline" title="passline"   />
+                        <area id="16x1-11-2" shape="rect" coords="598,299,705,352" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=16x1-11-2" alt="16for1-11(2)" title="16x1-11"    />
+                        <area id="dontPassLine" shape="poly" coords="56,18,85,18,85,212,87,226,93,240,105,254,128,262,151,264,411,264,412,285,122,284,108,283,91,278,77,270,70,264,62,251,57,234,56,217" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=dontPassLine" alt="dontpass" title="dontpass"   />
+                        <area id="big6" shape="poly" coords="416,333,416,185,473,334" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=big6" alt="big6" title="big6"   />
+                        <area id="big8" shape="poly" coords="472,286,472,136,417,136" nohref="?opcion=jugar&player=<?php echo $nombre?>&monto=<?php echo $monto;?>&valor=big8" alt="big8" title="big8"   />
+                    </map>
+
+                     <img id="chip" src="../Imagenes/chip.png" alt="Chip" />
+                     <img id="off" src="../Imagenes/off.png" alt="off"/>
+                     <img id="on" src="../Imagenes/on.png" alt="on"/>
+                </form>
+
+                <div id="dados">
+                    <form method="post" action="?opcion=jugar">
+                        <p class="monto">MONTO</p>
+                        <p class="montoQty">$ <?php echo $monto; ?></p>
+
+                        <input id="player" name="player" type="hidden" value="<?php echo $nombre;?>"/>
+                        <input id="monto" name="monto" type="hidden" value="<?php echo $monto;?>"/>
+                        <input id="valores" name="valor" type="hidden"/>
+                        <input id="punto" name="punto"  type="hidden"/>
+
+                        <input id="roll" name="lanzar" type="image" src="../Imagenes/roll.png" value="lanzar"/>
+                    </form>
+
+                    <input id="clear" type="image" src="../Imagenes/clear.bmp" value="Limpiar"/>
+
+                    <form method="post" action="?opcion=menu&player=<?php echo $nombre?>&monto=<?php echo $monto;?>">
+                        <input class="regresarBoton" type="image" src="../Imagenes/boton_regresar.png" value="Regresar"/>
+                    </form>
+                </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>

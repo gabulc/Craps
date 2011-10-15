@@ -1,0 +1,45 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Craps Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="title" content="Craps Game">
+    <meta name="author" content="Eduardo Arenas, Gabriel Lucano, Jeffrey Pinedo">
+    <meta name="robots" content="all,follow,index">
+    <meta name="keywords" content="craps, dados, juego de dados, craps Game">
+    <meta name="description" content="Juego de Dados">
+    
+    <link  href="craps_estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                  <img id="iHead" src="../Imagenes/crapsTitle.png" />
+            </div>
+            <div id="mainRegla">
+                <div id="reglas">
+                    <p>Las pasos para jugar son:</p>
+                    <p>Se lanzan los dados. Si en el primer lanzamiento se saca 7
+                    u 11 el jugador gana. Si se saca 2, 3 o 12 en el primer
+                    lanzamiento el jugador pierde. En todos los otros casos
+                    ese resultado se recuerda (la suma de los dos dados) y
+                    se vuelve a lanzar. Si en ese nuevo lanzamiento se saca
+                    7 se pierde. Si coincide con lo sacado entonces gana el
+                    jugador. En todos los otros casos cambia el punto de recuerdo
+                    de resultado y se vuelve a lanzar.</p>
+                </div>
+                <div id="buttonBox">
+                    <ul id="lista">
+                        <li><a href="?opcion=irJugar&player=<?php echo $nombre;?>&monto=<?php echo $monto;?>"> JUGAR</a></li>
+                        <li><a href="?opcion=menu&player=<?php echo $nombre;?>&monto=<?php echo $monto;?>"> Regresar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

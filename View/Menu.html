@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Craps Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="title" content="Craps Game">
+    <meta name="author" content="Eduardo Arenas, Gabriel Lucano, Jeffrey Pinedo">
+    <meta name="robots" content="all,follow,index">
+    <meta name="keywords" content="craps, dados, juego de dados, craps Game">
+    <meta name="description" content="Juego de Dados">
+    
+    <link  href="craps_estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+
+  </head>
+  <body>
+    <div id="container">
+        <div id="header">
+              <img id="iHead" src="../Imagenes/crapsTitle.png" />
+        </div>
+        <div id="mainMenu">
+            <div id="content">
+                <h2> Hola, <?php echo $nombre.$name?></h2>
+                <p id="suerte">Que tengas suerte suficiente para ganar...!</p>
+            </div>
+            <div id="buttonBox">
+                <ul id="lista">
+                    <li><a href="?opcion=irJugar&player=<?php echo $nombre.$name?>&monto=<?php echo $monto.$amount;?>" > JUGAR</a></li>
+                    <li><a href="?opcion=reglas&player=<?php echo $nombre.$name?>&monto=<?php echo $monto.$amount;?>"> Reglas de Juego</a></li>
+                    <li><a href="?opcion=''>"> Salir</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

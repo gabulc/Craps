@@ -1,0 +1,329 @@
+body { font-family:verdana, arial, sans-serif;
+    color: black;
+    background-image:url(../imagenes/background.gif);
+    background-repeat:repeat;
+}
+
+h1 {
+    margin-top: 5px;
+    font-size: 500%;
+    font-family:Lithos Pro;
+    float:left;
+    color:white;
+}
+h2 {
+    margin: 0px;
+    font-size: 100%;
+}
+a  {
+    text-decoration:none;
+}
+p {
+    font-size: 120%;
+    margin:0;
+    padding:0;
+    text-align:justify;
+}
+.pk{
+    font-size: 80%;
+}
+#suerte{
+    font-size: 90%;
+}
+#bEntrar{
+    position:absolute;
+    width:150px;
+    height:auto;
+    top:250px;
+    left:340px;
+}
+#iHead{
+    position:absolute;
+    width: 760px;
+    height:110px;
+}
+#mensaje{
+   width:100px;
+}
+label {
+    font-size: 120%;
+    margin:0;
+    padding:0;
+    text-align:justify;
+}
+li {
+    font-size: 80%;
+}
+#table{
+    z-index: 2;
+}
+#container{
+   position: absolute;
+   width: 760px;
+   height:110px;
+   top:100px;
+}
+#header{
+    position: absolute;
+    width: 760px;
+    height:110px;
+    top:8px;
+    left: 0px;
+}
+.inicio{
+    position: absolute;
+    width: 1081px;
+    height: 562px;
+}
+#main{
+    position: absolute;
+    width: 760px;
+    height: 452px;
+    top:117px;
+    left: 0px;
+    overflow: auto;
+    background-color: white;
+    color:black;
+}
+#mainMenu{
+    position: absolute;
+    width: 760px;
+    height: 452px;
+    top:117px;
+    left:0px;
+    overflow: auto;
+    background-image:  url(../imagenes/backMenu.jpeg);
+    color:white;
+}
+#content{
+    position: absolute;
+    left: 230px;
+    top:180px;
+    width: 300px;
+}
+#mainRegla{
+    position: absolute;
+    width: 760px;
+    height: 452px;
+    top:117px;
+    left: 0px;
+    overflow: auto;
+    background-image:  url(../imagenes/backRegla.png);
+    color:white;
+}
+#mainInicio{
+    position: absolute;
+    width: 760px;
+    height: 452px;
+    top:117px;
+    left: 0px;
+    overflow: auto;
+    background-image:  url(../imagenes/tripledado.png);
+    z-index:1;
+}
+#LogImag{
+    position: absolute;
+    width:300px;
+    height:144px;
+    top:-45px;
+    left: 150px;
+    color:white;
+}
+#mainCraps{
+    position: absolute;
+    width: 760px;
+    height: 490px;
+    top:117px;
+    left: 0px;
+    overflow: auto;
+    background-color: #548347;
+    color:white;
+    border: 2px solid black;
+}
+
+#buttonBox{
+    position: absolute;
+    left: 20px;
+    top:350px;
+    width: 700px;
+}
+
+#lista{
+    list-style-type: none;
+    margin: 20px;
+    margin-left: 20px;
+    padding:0;
+}
+#lista li{
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    float: left;
+}
+#lista li a{
+    display: block;
+    width:200px;
+    padding: 4px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: #400000 ;
+    background:  white;
+}
+#lista li a:hover{
+    color:white;
+    background: #400000 ;
+    cursor:pointer;
+}
+#lista2{
+    list-style-type: none;
+    margin: 20px;
+    margin-top: 300px;
+    margin-left: 130px;
+    
+    padding:0;
+}
+#lista2 li{
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    margin-bottom: 30px;
+    float: left;
+}
+#lista2 li a{
+    display: block;
+    width:200px;
+    padding: 4px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: forestgreen;
+    background:  white;
+}
+#lista2 li a:hover{
+    color:white;
+    background: forestgreen;
+    cursor:pointer;
+}
+#reglas{
+    position: absolute;
+    width: 500px;
+    float: left;
+    left:140px;
+    top:80px;
+    color:black;
+}
+#jugarBoton{
+    font-size: 30px;
+}
+.ingresarTabla{
+    position: absolute;
+    top:120px;
+    left: 238px;
+}
+
+.crapsChico{
+    position: relative;
+    left: 130px;
+    width:280px;
+    height:160px;
+}
+/*html :  Craps*/
+
+#contentCraps{
+    position: relative;
+    width: 720px;
+    height: 450px;
+    top:10px;
+    left: 10px;
+    
+    
+    
+}
+#dados{
+    position: absolute;
+    height: 400px;
+    width: 720px;
+    left:0px;
+    top: 0px;
+    
+}
+.dado{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 350px;
+    left: 20px;
+}
+
+.dado2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 350px;
+    left: 80px;
+}
+
+.monto{
+    position:absolute;
+    width:100px;
+    text-align:center;
+    font-size:25px;
+    top:0px;
+    left:550px;
+}
+.montoQty{
+    position:absolute;
+    width:110px;
+    text-align:center;
+    font-size:30px;
+    border:1.5px solid white;
+    top:40px;
+    left:550px;
+}
+#roll{
+    position: absolute;
+    top:350px;
+    left:220px;
+    height: 120px;
+    width: 100px;
+}
+#clear{
+    position: absolute;
+    top:390px;
+    left:350px;
+    height: 30px;
+    width: 101px;
+}
+#off{
+    z-index: 2;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:20px;
+    left:105px;
+}
+#on{
+    z-index: 1;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:20px;
+    left:69px;
+}
+#chip{
+    z-index: 2;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    top:350px;
+    left:150px;
+}
+
+.regresarBoton{
+    position: absolute;
+    top: 410px;
+    left: 540px;
+    width: 180px;
+    height: 70px;
+}

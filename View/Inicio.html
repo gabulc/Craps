@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Craps Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="title" content="Craps Game">
+    <meta name="author" content="Eduardo Arenas, Gabriel Lucano, Jeffrey Pinedo">
+    <meta name="robots" content="all,follow,index">
+    <meta name="keywords" content="craps, dados, juego de dados, craps Game">
+    <meta name="description" content="Juego de Dados">
+
+    <link  href="craps_estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+
+  </head>
+  <body>
+      <div id="container">
+          <div id="header">
+              <img id="iHead" src="../Imagenes/crapsTitle.png" />
+          </div>
+          <div id="mainInicio">
+              <form method="post" action="?opcion=menuIngresando">
+                  <div id="LogImag">
+                  <table class="ingresarTabla">
+                      <tr>
+                          <td><label for="player">Nombre: </label></td>
+                          <td><input type="text" name="player"/></td>
+                      </tr>
+                      <tr>
+                          <td><label for="monto">Monto: </label></td>
+                          <td><input type="text" name="monto"/></td>
+                      </tr>
+                      <tr>
+                          <td> </td>
+                          <td><p class="pk">(Entre 1,000 a 5,000)</p></td>
+
+                      </tr>
+                      <tr>
+                          <td colspan="2"> <p><?php if($nombre!=null || $monto!=null || $monto<1000 || $monto>5000){echo $mensaje;}?></p></td>
+                      </tr>
+
+                  </table>
+                  
+                  <input id="bEntrar" type="image" value="Entrar" src="../Imagenes/enter_button.gif"/>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </body>
+</html>
